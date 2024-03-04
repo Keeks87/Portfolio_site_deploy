@@ -1,0 +1,252 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Left column for contact info, skills, and education -->
+            <div class="md:col-span-1 bg-white shadow p-4">
+                <h2 class="font-bold text-xl mb-2">Contact Information</h2>
+                <h6>+27 72 915 2927</h6>
+                <h6>Cape Town</h6>
+                <h6>keenandup87@gmail.com</h6>
+                <button onclick="window.location.href=
+                    'https:www.linkedin.com/in/keenan-du-plessis-4a5338b0/'"
+                    class="bg-gray-500 hover:bg-blue-700 text-white 
+                    font-bold py-2 px-4 rounded">
+                    LinkedIn
+                </button>
+                <button onclick="window.location.href=
+                    'https:github.com/Keeks87'"
+                    class="bg-gray-500 hover:bg-blue-700 text-white 
+                    font-bold py-2 px-4 rounded">
+                    GitHub
+                </button>
+                
+                <h2 class="font-bold text-xl mt-4 mb-2">Skills</h2>
+                <p>
+                <ul>
+                    <h5 class="font-bold text-md mb-4">
+                        Programming Languages</h5>
+                    <img src="https://skillicons.dev/icons?i=python,javascript&theme=dark"
+                        alt="Tech Stack Icons"/>
+                    <br>
+                    <h5 class="font-bold text-md mb-4">
+                        Web Development Frameworks</h5>
+                    <img src="https://skillicons.dev/icons?i=django,react,express,nodejs&theme=dark"
+                        alt="Tech Stack Icons"/>
+                    <br>
+                    <h5 class="font-bold text-md mb-4">
+                        Markup and Style Languages</h5>
+                    <img src="https://skillicons.dev/icons?i=html,css,tailwind,bootstrap&theme=dark"
+                        alt="Tech Stack Icons"/>
+                    <br>
+                    <h5 class="font-bold text-md mb-4">
+                        Database Management Systems</h5>
+                    <img src="https://skillicons.dev/icons?i=sqlite,mongodb,postgresql&theme=dark"
+                        alt="Tech Stack Icons"/>
+                    <br>
+                    <h5 class="font-bold text-md mb-4">
+                        Cloud Services & Containerization</h5>
+                    <img src="https://skillicons.dev/icons?i=docker,aws,vercel&theme=dark"
+                        alt="Tech Stack Icons"/>
+                    <br>
+                    <h5 class="font-bold text-md mb-4">
+                        Version Control System</h5>
+                    <img src="https://skillicons.dev/icons?i=git,github&theme=dark"
+                        alt="Tech Stack Icons"/>
+                    <br>
+                    <h5 class="font-bold text-md mb-4">
+                        Development Tools</h5>
+                    <img src="https://skillicons.dev/icons?i=postman,vscode&theme=dark"
+                        alt="Tech Stack Icons"/>
+                </ul>
+                </p>
+
+                <h2 class="font-bold text-xl mt-4 mb-2">Education</h2>
+                
+                <h4 class="font-bold">2023-Current</h4>
+                <p><em>AWS Cloud computing</em></p>
+                <br>
+                <h4 class="font-bold">HyperionDev</h4>
+                <p><em>Software Development bootcamp</em></p>
+                <p><em>Web Development bootcamp</em></p>
+                <br>
+                <h4 class="font-bold">University of Michigan</h4>
+                <p><em>Python for Everybody Specialization</em></p>
+                <p><em>Django for Everybody Specialization</em></p>
+                <br>
+                <h3 class="font-bold">Secondary</h3>
+                <h4 class="font-bold">Somerset West Private School</h4>
+            </div>
+
+            <!-- Right column for professional summary, experiences, and
+                accomplishments -->
+            <div class="md:col-span-2 bg-white shadow p-4">
+                <h2 class="font-bold text-xl mb-2">Professional Summary</h2>
+                <p>I am a highly motivated full-stack developer who enjoys 
+                    growing my knowledge on topics such as AI and Software
+                    Engineering. I am currently upskilling in AWS, I am
+                    eager to contribute my skills and dedication to the
+                    field of technology.
+                </p>
+                <br>
+                <p>I am committed to achieving my goals and expanding my
+                    knowledge base. I enjoy spending time outdoors and 
+                    engaging in physical activities, which allows me to
+                    maintain a healthy work-life balance and stay focused on
+                    my goals.
+                </p>
+                <br>
+                <p>I also gained valuable experience as, a Coding Mentor by
+                    spearheading the refactoring of django tasks within the
+                    learning department. The successful completion of these
+                    refactoring initiatives resulted in streamlined
+                    processes, and enhanced code maintainability,
+                    contributing to an improved learning experience for
+                    students.
+                </p>
+                
+                <h2 class="font-bold text-xl mt-4 mb-2">Experience</h2>
+                <div class="mb-2">
+                <p>
+                    <h4 class="font-bold text-md">Coding Mentor - HyperionDev |
+                        E - Learning</h4>
+                    <h5 class="font-bold text-md mb-4">April 2023-Current</h5>
+                    <ul>
+                        <li class="mb-2">Successfully delivered prompt and high-quality
+                        mentoring support via one-on-one support calls,
+                        resulting in measurable improvements in students'
+                        coding skills and comprehension.
+                        </li>
+                        <details class="mt-2">
+                            <summary class="text-gray-500 cursor-pointer">
+                                Read More</summary>
+                            <p class="text-gray-600">
+                                <ul>
+                        <li class="mb-2">Implemented a rigorous code review process,
+                        resulting in consistently elevated code quality and
+                        a quantifiable increase in student success rates.
+                        </li>
+                        <li class="mb-2">Conducted targeted one-on-one sessions, leading
+                        to a significant reduction in the time students
+                        spent grappling with challenging problems and a
+                        measurable increase in overall student motivation.
+                        </li>
+                        <li class="mb-2">Demonstrated commitment to staying at the
+                        forefront of technology by successfully implementing
+                        the latest industry stacks into the curriculum,
+                        keeping students abreast of cutting-edge
+                        developments.
+                        </li>
+                        <li class="mb-2">Played a key role in formulating and
+                        implementing innovative strategies to enhance
+                        pedagogical processes, resulting in a notable
+                        improvement in student completion rates and
+                        retention.
+                        </li>
+                        <li class="mb-2">Identified and leveraged outstanding students as
+                        Student Champions or Assisting Mentors, contributing
+                        to an enhanced sense of community and peer support,
+                        ultimately improving the overall student experience.
+                        </li>
+                        <li class="mb-2">
+                        From July 1st to January 31st, completed a total of 1705
+                        reviews with an average Meta review score of 95.31%,
+                        underscoring a consistent dedication to excellence and
+                        quality in mentoring.
+                        </li>
+                        <li class="mb-2">
+                        Successfully completed a second bootcamp, demonstrating
+                        ongoing professional development and a commitment to
+                        expanding teaching expertise.
+                        </li>
+                    </ul>
+                    </p>
+                    <!-- Past roles -->
+                    <h3 class="font-bold text-lg mt-8 mb-2">
+                        Past Experiences</h3>
+                    <h4 class="font-bold text-md">Compliance Manager -
+                        Investment Fund Africa | Mauritian Based</h4>
+                    <h5 class="font-bold text-md mb-4">2019-2022</h5>
+                    <p>I was appointed in the role of Compliance Manager at
+                    start-up "IFA" in 2017. I managed and optimised all
+                    compliance functions to remain compliant in line with the
+                    company's growth strategy and budget.
+                    </p>
+                    <br>
+
+                    <h4 class="font-bold text-md">Operating Officer - Nedebe
+                        Group | Project Consulting</h4>
+                    <h5 class="font-bold text-md mb-4">2017-2019</h5>
+                    <p>I was appointed to the role of Operation Officer at
+                    Nedebe Group in 2017. I managed a large team and ensured
+                    daily operations and key projects were developed and
+                    implemented in a timely and cost-effective manner, reducing
+                    excess spending. I managed multiple projects in the
+                    agriculture and property development industries. I
+                    negotiated and drafted contracts with various business
+                    partners and clients.
+                    </p>
+                    <br>
+
+                    <h4 class="font-bold text-md">HACCP Compliance Manager -
+                        Intshona FMCG | Supplier to PNP</h4>
+                    <h5 class="font-bold text-md mb-4">2013-2014</h5>
+                    <p>As HACCP manager of Intshona FMCG, I carried out thorough
+                    food hygiene and safety training. I developed and maintained
+                    hygiene programs, including noise surveys and hazardous
+                    material management plans. I managed compliance efforts,
+                    reporting, and audits.
+                    </p>
+                    <br>
+
+                    <h4 class="font-bold text-md">Junior Manager - Spur San
+                        Francisco | Restaurant chain</h4>
+                    <h5 class="font-bold text-md mb-4">2017-2019</h5>
+                    <p>I ensured compliance with licensing, hygiene, health,
+                    and safety legislation. I recorded stock levels and ordered
+                    supplies.
+                    </p>
+                    <br>
+
+                    <h4 class="font-bold text-md">Manager - Paarl Action Sports
+                        | Indoor sports arena</h4>
+                    <h5 class="font-bold text-md mb-4">2010-2013</h5>
+                    <p>I managed all day-to-day operations</p>
+                    <br>
+
+                    <h4 class="font-bold text-md">Audit Clerk - Privatactus Inc
+                        | Auditors Firm</h4>
+                    <h5 class="font-bold text-md mb-4">2006-2010</h5>
+                    <p>I compiled financial data and prepared reports for
+                    accounting leadership review and use.
+                    </p>
+                    <br>
+                    </details>
+                </div>
+
+                <h2 class="font-bold text-xl mt-4 mb-2">Accomplishments</h2>
+                    <p class="text-gray-600">
+                        <ul>
+                            <li class="mb-2">Refactoring Django tasks for Learning
+                                Department</li>
+                            <li class="mb-2">Developed and implemented compliance
+                                procedures</li>
+                            <li class="mb-2">Complete redesign of company websites for IFA
+                                and Nedebe Group</li>
+                        </ul>
+                    </p>
+                    <div class="flex justify-center gap-4 mt-4">
+                        <a href="{% static 'resume.pdf' %}" class="bg-gray-500 
+                        hover:bg-blue-700 text-white font-bold py-2 px-4
+                        rounded">
+                            Download Resume
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

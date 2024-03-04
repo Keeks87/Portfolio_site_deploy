@@ -1,0 +1,48 @@
+<!-- templates/base.html -->
+
+<!-- Load static -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keenan du Plessis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
+            <img src="{% static 'images/ai_elephant.jpg' %}" alt="Logo" class="w-12 h-12">
+            <div class="hidden md:flex space-x-4">
+                <a href="/" class="hover:underline">About</a>
+                <a href="/projects" class="hover:underline">Projects</a>
+                <a href="/portfolio" class="hover:underline">Portfolio</a>
+                <a href="/blog" class="hover:underline">Blog</a>
+                <a href="/admin" class="hover:underline">Admin</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto my-4 px-4">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer class="bg-gray-800 text-white text-center py-3">
+        <div class="flex justify-center space-x-4">
+            <a href="https://www.instagram.com/codecraftedlife/" target="_blank">
+                <img src="{% static 'images/instagram.png' %}" alt="Instagram Icon" class="w-8 h-8">
+            </a>
+            <a href="https://www.linkedin.com/in/keenan-du-plessis-4a5338b0/" target="_blank">
+                <img src="{% static 'images/linkedin.png' %}" alt="LinkedIn Icon" class="w-8 h-8">
+            </a>
+            <a href="https://github.com/Keeks87" target="_blank">
+                <img src="{% static 'images/github.png' %}" alt="GitHub Icon" class="w-8 h-8">
+            </a>
+        </div>
+        <p>© 2024 Keenan du Plessis</p>
+    </footer>
+</body>
+</html>
