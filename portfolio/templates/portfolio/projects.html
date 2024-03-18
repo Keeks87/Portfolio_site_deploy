@@ -4,46 +4,47 @@
 
 {% block content %}
 <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio">
-    <div class="container">
+<section id="portfolio" class="py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
         <!-- Section Title -->
-        <div class="section-title">
-            <h1>Portfolio</h1>
-            <h2>Keenan du Plessis</h2>
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-800">Portfolio</h1>
+            <h2 class="text-2xl font-medium text-gray-600">Keenan du Plessis</h2>
         </div>
 
-<!-- Project Showcase -->
-    <div class="container mt-4">
-        <h1 class="mb-4">Project showcase</h1>
-        <div class="row">
-            {% for project in projects %}
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">{{ project.title }}</h2>
-                            <p class="card-text">{{ project.description }}</p>
-                            
-                            <!-- Code snippet (if applicable) -->
-                            {% if project.code_snippet %}
-                                <pre><code>{{ project.code_snippet }}</code></pre>
-                            {% endif %}
+        <!-- Project Showcase -->
+        <div class="mt-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6">Project showcase</h1>
+            <div class="flex flex-wrap -m-4">
+                {% for project in projects %}
+                    <div class="w-full md:w-1/3 p-4">
+                        <div class="bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col">
+                            <div class="p-6">
+                                <h2 class="font-bold text-xl mb-2">{{ project.title }}</h2>
+                                <p class="text-gray-700 mb-4">{{ project.description }}</p>
 
-                            <!-- GitHub link (if applicable) -->
-                            {% if project.github_link %}
-                                <a href="{{ project.github_link }}" class="d-block mb-2">GitHub Repository</a>
-                            {% endif %}
+                                <!-- Code snippet (if applicable) -->
+                                {% if project.code_snippet %}
+                                    <pre><code class="bg-gray-100 p-2 text-sm">{{ project.code_snippet }}</code></pre>
+                                {% endif %}
 
-                            <!-- Live Demo link (if applicable) -->
-                            {% if project.live_demo_link %}
-                                <a href="{{ project.live_demo_link }}" class="d-block">Live Demo</a>
-                            {% endif %}
+                                <!-- GitHub link (if applicable) -->
+                                {% if project.github_link %}
+                                    <a href="{{ project.github_link }}" class="text-blue-500 hover:text-blue-600 underline mb-2 inline-block">GitHub Repository</a>
+                                {% endif %}
+
+                                <!-- Live Demo link (if applicable) -->
+                                {% if project.live_demo_link %}
+                                    <a href="{{ project.live_demo_link }}" class="text-blue-500 hover:text-blue-600 underline">Live Demo</a>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% endfor %}
-            {% if projects|length == 0 %}
-                <p class="col-12">No projects available.</p>
-            {% endif %}
+                {% endfor %}
+                {% if projects|length == 0 %}
+                    <p class="w-full text-center text-gray-600">No projects available.</p>
+                {% endif %}
+            </div>
         </div>
     </div>
 {% endblock %}
