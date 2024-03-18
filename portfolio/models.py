@@ -22,7 +22,7 @@ class Project(models.Model):
     live_demo_link = models.URLField()
 
     def __str__(self):
-        return self.title
+        return str(self.title)
 
 class BlogPost(models.Model):
     """ 
