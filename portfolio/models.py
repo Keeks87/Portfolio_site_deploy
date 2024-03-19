@@ -23,19 +23,3 @@ class Project(models.Model):
 
     def __str__(self):
         return str(self.title)
-
-class BlogPost(models.Model):
-    """ 
-    A blog post that a user has written.
-    
-    Fields: 
-        The title of the blog post.
-        The date the blog post was written.
-        The content of the blog post.
-    """
-    title = models.CharField(max_length=100)
-    date = models.DateField()
-    content = models.TextField()
-
-    def __str__(self):
-        return self.title + " - Published On: " + str(self.date)

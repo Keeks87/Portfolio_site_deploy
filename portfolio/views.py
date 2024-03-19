@@ -15,5 +15,3 @@ def projects(request):
     projects = Project.objects.all()
     return render(request, 'portfolio/projects.html', {'projects': projects})
 
-def blog(request):
-    return render(request, 'portfolio/blog.html')
